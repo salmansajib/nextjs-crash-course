@@ -1,4 +1,6 @@
 import Button from '@/app/components/Button';
+import Image from 'next/image';
+import flower from '@/public/images/flower.jpg';
 
 function Mission() {
   return (
@@ -9,6 +11,16 @@ function Mission() {
         adipisci dolor placeat! Suscipit maxime iusto architecto reiciendis iure
         voluptates mollitia repudiandae eum ipsum, eligendi maiores nesciunt
         accusamus animi pariatur, dolore saepe doloremque exercitationem!
+      </div>
+
+      <div className=' w-[600px] '>
+        <Image
+          className='mt-5'
+          src={flower}
+          alt='flower bouquet image'
+          quality={100}
+          placeholder='blur'
+        />
       </div>
 
       <Button />
