@@ -1,8 +1,12 @@
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'NextJs Crash',
@@ -12,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className=' p-6 '>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <nav>
           <ul className='flex gap-5 mb-5'>
             <li>
